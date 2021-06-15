@@ -3,3 +3,55 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+main {
+  margin: 50px auto;
+  width: 960px;
+}
+
+.a {
+  padding: 20px;
+}
+
+.a p {
+  line-height: 100%;
+}
+
+.a:nth-child(odd) {
+  background-color: rgba(196, 192, 192, 0.6);
+}
+
+.box {
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box-item {
+  height: 200px;
+  width: 30%;
+  display: inline-block;
+}
+
+.box2,
+.box3,
+.box4,
+.box6,
+.box7,
+.box8 {
+  background-color: rgb(95, 91, 91, 0.7);
+}
+
+.box1,
+.box5,
+.box9 {
+  background-color: rgb(27, 27, 27, 0.7);
+}
+
+.box-item:not(:nth-child(3n)) {
+  margin-right: 5%;
+}
+
+.box-item:nth-child(-n + 6) {
+  margin-bottom: 40px;
+}
